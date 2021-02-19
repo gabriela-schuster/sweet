@@ -199,7 +199,7 @@ h2 {
 	width: 5vw;
 }
 #review p {
-	color: var(--brown);
+	color: var(--gray);
 	line-height: 4.5vh;
 	font-size: 1.5vw;
 	margin-bottom: 3vh;
@@ -210,7 +210,7 @@ h2 {
 #review span {
 	font-size: 2vw;
 	font-family: 'Old Standard TT';
-	color: var(--gray);
+	color: var(--brown);
 }
 
 footer {
