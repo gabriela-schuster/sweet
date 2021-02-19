@@ -1,0 +1,269 @@
+:root {
+	--dark_brown: #85583f;
+	--brown: #ceae7f;
+	--white: #eff1e4;
+	--gray: rgb(200, 200, 200);
+	--blue: #2ebdbd;
+	--dark_blue: #537c8e;
+	--black: #101010;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+    /* font-family: 'Old Standard TT', serif; */
+	background-color: var(--black);
+	box-sizing: border-box;
+}
+a:link {/* - a normal, unvisited link*/
+	color: var(--white);
+	text-decoration: none;
+}
+a:visited {
+	color: var(--white);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	background-image: url(welcome.jpg);
+	background-position: center center;
+	top: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	color: var(--white);
+}
+.cont {
+	width: 100%;
+	max-width: 10000px;
+	height: 100%;
+	padding: 7vh 7vw;
+	box-sizing: border-box;
+}
+.sizer {
+	max-width: 45%;
+	height: 100%;
+	display: inline-block;
+}
+header h1 {
+	font-family: 'Old Standard TT', serif;
+	font-size: 6vw;
+}
+.links {
+	display: inline-block;
+	position: relative;
+	top: 40%;
+	left: 10%;
+}
+.links a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2vw;
+	font-weight: bold;
+
+	color: var(--gray);
+	margin-left: 2vw;
+	margin-bottom: 150vh;
+}
+
+.mar {
+	margin: 20vh;
+}
+
+h2 {
+	font-family: 'Old Standard TT', serif;
+	font-size: 4vw;
+	color: var(--dark_brown);
+}
+
+#famous {
+	width: 100%;
+	height: auto;
+
+	text-align: center;
+	overflow: hidden;
+}
+#famous img {
+	width: 50%;
+	float: left;
+	border-radius: 10px;
+	/* transform: translateY(-35%); */
+}
+.dis_flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.fam_text {
+	margin-left: 2vw;
+}
+#famous h2 {
+	border-bottom: 2px solid #ceae7f;
+}
+#famous p {
+	color: var(--gray);
+	line-height: 6vh;
+	margin-top: 2vh;
+	font-size: 2vw;
+	margin-bottom: 20vh;
+}
+
+#catalog {
+	clear: both;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-bottom: 20vh;
+}
+#catalog h2 {
+	margin-top: 20vh;
+	border-bottom: 2px solid #ceae7f;
+}
+.sweet_gen {
+	width: 30%;
+	margin: 5vh 1vw;
+	/* box-shadow: 2px 2px 20px var(--brown); */
+	margin-top: 5vh;
+	display: inline-block;
+	border-radius: 20px;
+}
+.sweet_gen img {
+	width: 100%;
+	border-radius: 5px;
+}
+#catalog h3 {
+	font-family: 'Old Standard TT', serif;
+	font-size: 2vw;
+	color: var(--dark_brown);
+	margin-top: 2vh;
+}
+#catalog p {
+	font-size: 1.5vw;
+	margin-bottom: 2vh;
+	color: var(--gray);
+}
+
+.enjoy {
+	width: 100%;
+	height: 95vh;
+	background-image: url(enjoy.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.enjoy h1 {
+	font-family: 'Old Standard TT', serif;
+	font-size: 6vw;
+	color: var(--brown);
+}
+.enjoy p {
+	font-size: 3vw;
+	color: var(--gray);
+}
+
+#review {
+	width: 100%;
+	height: auto;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.quote {
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+	margin: 10vh 1vw 20vh 1vw;
+}
+#review h2 {
+	margin-top: 20vh;
+}
+#review img {
+	transform: rotate(180deg);
+	width: 5vw;
+}
+#review p {
+	color: var(--brown);
+	line-height: 4.5vh;
+	font-size: 1.5vw;
+	margin-bottom: 3vh;
+}
+.span-wra {
+	text-align: right;
+}
+#review span {
+	font-size: 2vw;
+	font-family: 'Old Standard TT';
+	color: var(--gray);
+}
+
+footer {
+	background: #101010;
+	background: linear-gradient(150deg, rgba(16,16,16,1) 0%, rgba(48,46,45,0.7) 100%);
+	width: 100%;
+	height: auto;
+	color: var(--gray);
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#form {
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	width: 50vw;
+	height: auto;
+	padding: 5vh;
+
+	border-radius: 10px;
+	box-shadow: 4px 4px 40px var(--black);
+}
+#form > h2 {
+	font-size: 3vw;
+	color: var(--brown);
+}
+input {
+	font-size: 1vw;
+	background-color: rgba(10, 10, 10, 0.7);
+	color: var(--gray);
+	width: 100%;
+
+	padding: 3%;
+	box-sizing: border-box;
+	margin-top: 5vh;
+	border: 0px solid var(--gray);
+	border-radius: 5px;
+
+	height: 5vh;
+}
+input:focus {
+	outline: 0px solid var(--gray);
+	background-color: #131313;
+}
+.msg {
+	height: 20vh;
+	overflow: auto;
+}
+.sub {
+	background-color: #131313;
+	padding: 0;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
